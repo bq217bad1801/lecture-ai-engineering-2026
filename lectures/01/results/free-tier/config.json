@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.8-flash"
+  ],
+  "repeats": 3,
+  "interval_seconds": 15.0,
+  "questions": [
+    {
+      "id": "lora",
+      "text": "LoRAとは何ですか？"
+    },
+    {
+      "id": "homework",
+      "text": "AIE2026の講座の宿題にある「3レベル」とは何ですか？"
+    },
+    {
+      "id": "lecture02",
+      "text": "AIE2026の第2回では何を学びますか？"
+    }
+  ],
+  "order_seed": 42,
+  "sdk_attempts": 1,
+  "timeout_ms": 120000,
+  "generation_config": "model defaults; no temperature override"
+}
