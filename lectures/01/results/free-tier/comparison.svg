@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="484" viewBox="0 0 1200 484">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="sans-serif" font-size="13" fill="#182230">
+<text x="20" y="25">Observed successes only — bar: median; line: min–max</text>
+<text x="370" y="55">API response time (s)</text>
+<text x="15" y="101">gemini-3.5-flash-lite / homework (3/3)</text>
+<rect x="370" y="85" width="8.47" height="24" fill="#4c83d1"/>
+<path d="M 378.13,97 H 380.70" stroke="#182230" stroke-width="2"/>
+<text x="388.70" y="102">2.72</text>
+<text x="15" y="165">gemini-3.5-flash-lite / lecture02 (3/3)</text>
+<rect x="370" y="149" width="4.42" height="24" fill="#4c83d1"/>
+<path d="M 373.24,161 H 387.48" stroke="#182230" stroke-width="2"/>
+<text x="395.48" y="166">1.42</text>
+<text x="15" y="229">gemini-3.5-flash-lite / lora (3/3)</text>
+<rect x="370" y="213" width="9.75" height="24" fill="#4c83d1"/>
+<path d="M 379.02,225 H 381.05" stroke="#182230" stroke-width="2"/>
+<text x="389.05" y="230">3.14</text>
+<text x="15" y="293">gemini-3.8-flash / homework (3/3)</text>
+<rect x="370" y="277" width="128.30" height="24" fill="#4c83d1"/>
+<path d="M 430.30,289 H 638.46" stroke="#182230" stroke-width="2"/>
+<text x="646.46" y="294">41.25</text>
+<text x="15" y="357">gemini-3.8-flash / lecture02 (2/3)</text>
+<rect x="370" y="341" width="201.62" height="24" fill="#4c83d1"/>
+<path d="M 483.24,353 H 660.00" stroke="#182230" stroke-width="2"/>
+<text x="668.00" y="358">64.82</text>
+<text x="15" y="421">gemini-3.8-flash / lora (3/3)</text>
+<rect x="370" y="405" width="147.90" height="24" fill="#4c83d1"/>
+<path d="M 508.14,417 H 630.45" stroke="#182230" stroke-width="2"/>
+<text x="638.45" y="422">47.55</text>
+<text x="780" y="55">Output tokens (excludes thinking)</text>
+<rect x="780" y="85" width="173.92" height="24" fill="#4c83d1"/>
+<path d="M 953.16,97 H 991.22" stroke="#182230" stroke-width="2"/>
+<text x="999.22" y="102">457.00</text>
+<rect x="780" y="149" width="39.20" height="24" fill="#4c83d1"/>
+<path d="M 815.01,161 H 832.14" stroke="#182230" stroke-width="2"/>
+<text x="840.14" y="166">103.00</text>
+<rect x="780" y="213" width="232.15" height="24" fill="#4c83d1"/>
+<path d="M 1009.87,225 H 1025.47" stroke="#182230" stroke-width="2"/>
+<text x="1033.47" y="230">610.00</text>
+<rect x="780" y="277" width="254.99" height="24" fill="#4c83d1"/>
+<path d="M 1032.32,289 H 1036.51" stroke="#182230" stroke-width="2"/>
+<text x="1044.51" y="294">670.00</text>
+<rect x="780" y="341" width="84.49" height="24" fill="#4c83d1"/>
+<path d="M 814.25,353 H 914.72" stroke="#182230" stroke-width="2"/>
+<text x="922.72" y="358">222.00</text>
+<rect x="780" y="405" width="285.05" height="24" fill="#4c83d1"/>
+<path d="M 1012.15,417 H 1070.00" stroke="#182230" stroke-width="2"/>
+<text x="1078.00" y="422">749.00</text>
+</g></svg>

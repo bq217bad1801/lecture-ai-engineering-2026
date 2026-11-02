@@ -1,0 +1,19 @@
+﻿trial_id,model,question_id,repeat,status,rating,reason,source
+r1-m1-lora,gemini-3.8-flash,lora,1,ok,,,
+r1-m0-homework,gemini-3.5-flash-lite,homework,1,ok,一部誤り,3段階の趣旨は近いが正式な区分と異なり、どれか1つで完了という条件が欠落。一般例・推測であることは明示。,data/glossary.json の homework-levels
+r1-m0-lecture02,gemini-3.5-flash-lite,lecture02,1,ok,,,
+r1-m1-homework,gemini-3.8-flash,homework,1,ok,誤り,必修ライン・最低スコア・合格目標など、講座の定義にない達成基準を提示。どれか1つで完了という選択式の条件を説明できていない。,data/glossary.json の homework-levels
+r1-m0-lora,gemini-3.5-flash-lite,lora,1,ok,,,
+r1-m1-lecture02,gemini-3.8-flash,lecture02,1,error,,,
+r2-m1-lora,gemini-3.8-flash,lora,2,ok,,,
+r2-m0-lora,gemini-3.5-flash-lite,lora,2,ok,,,
+r2-m0-lecture02,gemini-3.5-flash-lite,lecture02,2,ok,,,
+r2-m1-homework,gemini-3.8-flash,homework,2,ok,誤り,一般論との留保はあるが、レベル1を必須・修了要件、レベル2以上を加点や推奨ラインと説明。用語集の選択式・どれか1つで完了・原則採点なしと整合しない基準を提示。,data/glossary.json の homework-levels
+r2-m1-lecture02,gemini-3.8-flash,lecture02,2,ok,,,
+r2-m0-homework,gemini-3.5-flash-lite,homework,2,ok,一部誤り,選べる難易度別課題という趣旨や自分でコードを書く説明は近いが、正式な基礎・実装・発展と区分が異なり、どれか1つで完了という条件が欠落。一般例であることは明示。,data/glossary.json の homework-levels
+r3-m1-lora,gemini-3.8-flash,lora,3,ok,,,
+r3-m0-homework,gemini-3.5-flash-lite,homework,3,ok,一部誤り,基礎の確認・自力での実装という説明は近いが、正式な区分と異なり、どれか1つで完了という条件が欠落。一般例として留保し、資料確認を勧めている。,data/glossary.json の homework-levels
+r3-m0-lecture02,gemini-3.5-flash-lite,lecture02,3,ok,,,
+r3-m0-lora,gemini-3.5-flash-lite,lora,3,ok,,,
+r3-m1-homework,gemini-3.8-flash,homework,3,ok,誤り,複数の可能性として留保しているが、必須の最低提出ライン・高評価という基準や、AI活用の深度という別定義を提示。正式な3区分とどれか1つで完了という条件を説明できていない。,data/glossary.json の homework-levels
+r3-m1-lecture02,gemini-3.8-flash,lecture02,3,ok,,,
