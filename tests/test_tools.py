@@ -2,6 +2,8 @@
 
 import json
 
+import pytest
+
 from app import tools
 
 
@@ -46,3 +48,32 @@ def test_default_question_of_lecture1_is_answerable_from_glossary():
     assert "3レベル" in DEFAULT_QUESTION
     hits = json.loads(tools.search_glossary("3レベル"))
     assert hits[0]["term"] == "宿題の3レベル"
+
+
+def test_make_quiz_uses_only_the_requested_lecture(tmp_path, monkeypatch):
+    """別の回の用語を出題したり、定義以外を答えにしたりしない。"""
+    data = {"terms": [
+        {"term": "対象外", "lecture": 1, "definition": "別の回の定義"},
+        {"term": "確認用語", "lecture": 2, "definition": "用語集にある正しい定義"},
+    ]}
+    (tmp_path / "glossary.json").write_text(
+        json.dumps(data, ensure_ascii=False), encoding="utf-8"
+    )
+    monkeypatch.setattr(tools, "DATA_DIR", tmp_path)
+    tools.load_glossary.cache_clear()
+    try:
+        result = json.loads(tools.make_quiz(2))
+        assert result == {
+            "question": "「確認用語」の意味は？",
+            "answer": "用語集にある正しい定義",
+        }
+    finally:
+        tools.load_glossary.cache_clear()
+
+
+@pytest.mark.parametrize("lecture", [0, -1, 99])
+def test_make_quiz_reports_missing_lecture(lecture):
+    """用語のない回でも例外で終了せず、出題できない理由を返す。"""
+    result = tools.make_quiz(lecture)
+    assert str(lecture) in result
+    assert "用語がありません" in result
