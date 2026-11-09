@@ -1,0 +1,7 @@
+﻿model,question_id,attempts,successes,failures,elapsed_n,elapsed_median,elapsed_min,elapsed_max,input_tokens_n,input_tokens_median,input_tokens_min,input_tokens_max,output_tokens_n,output_tokens_median,output_tokens_min,output_tokens_max,thinking_tokens_n,thinking_tokens_median,thinking_tokens_min,thinking_tokens_max,total_tokens_n,total_tokens_median,total_tokens_min,total_tokens_max
+gemini-3.5-flash-lite,homework,3,3,0,3,2.7243435709997357,2.614816489000077,3.438790054000492,3,21,21,21,3,457,455,555,0,,,,3,478,476,576
+gemini-3.5-flash-lite,lecture02,3,3,0,3,1.4220782939992205,1.041473199000393,5.618959487999746,3,17,17,17,3,103,92,137,0,,,,3,120,109,154
+gemini-3.5-flash-lite,lora,3,3,0,3,3.1356563480003388,2.9003984070004662,3.5534042139997837,3,7,7,7,3,610,604,645,0,,,,3,617,611,652
+gemini-3.8-flash,homework,3,3,0,3,41.24865284599946,19.3856975209992,86.30825578900021,3,21,21,21,3,670,663,674,3,1013,852,1313,3,1708,1543,1997
+gemini-3.8-flash,lecture02,3,2,1,2,64.81925810100029,36.40500056200017,93.2335156400004,2,17.0,17,17,2,222.0,90,354,2,442.5,355,530,2,681.5,462,901
+gemini-3.8-flash,lora,3,3,0,3,47.54770406100033,44.41285842999969,83.73487606199978,3,7,7,7,3,749,610,762,3,1089,959,1100,3,1715,1706,1869
