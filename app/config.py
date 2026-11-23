@@ -9,6 +9,7 @@ import os
 #   例: export AIE_MODEL=gemini-3.5-flash
 DEFAULT_MODEL = "gemini-3.5-flash-lite"
 MODEL = os.getenv("AIE_MODEL", DEFAULT_MODEL)
+RAG_TOP_K = 2
 
 
 def api_error_message(status: int, detail: str = "") -> str:
